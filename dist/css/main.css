@@ -286,7 +286,7 @@ body {
   z-index: -1;
 }
 
-@media (min-width: 367px) {
+@media screen and (min-width: 367px) {
   .carousel {
     height: 60vh;
     position: relative;
@@ -349,5 +349,36 @@ body {
     display: block;
     width: 100%;
     font-size: 18px;
+  }
+}
+@media (min-width: 1208px) {
+  .carousel {
+    height: 80vh;
+  }
+  .carousel-button {
+    padding: 1.5rem;
+    top: 14.5rem;
+    z-index: 1;
+  }
+  .section-a h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-a .container {
+    flex-direction: row;
+    margin: 5rem;
+  }
+  .section-a .container .card-img .fa {
+    margin: 1rem;
+  }
+  .section-b h3 {
+    text-align: center;
+  }
+  .section-b .content {
+    flex-direction: row;
+  }
+  .section-b .content button {
+    display: flex;
+    margin: 1rem auto;
   }
 }/*# sourceMappingURL=main.css.map */
