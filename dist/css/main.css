@@ -1,0 +1,353 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.fixed-nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+nav {
+  background-color: #f4f4f4;
+  color: rgb(22, 19, 19);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+nav h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: rgb(22, 19, 19);
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+nav ul a:hover {
+  color: #b3b3b3;
+}
+nav ul .fab {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 367px) {
+  nav ul {
+    display: none;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+.btn-error, .btn-primary, .btn-success, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: rgb(22, 19, 19);
+}
+.btn-light:hover {
+  background-color: #dbdbdb;
+}
+.btn-light {
+  background-color: #f4f4f4;
+  color: rgb(22, 19, 19);
+}
+.btn-dark {
+  background-color: rgb(22, 19, 19);
+  color: #fff;
+}
+.btn-dark:hover {
+  background-color: #312b2b;
+}
+.btn-success {
+  background-color: rgba(20, 189, 20, 0.925);
+  color: #fff;
+}
+.btn-primary {
+  background-color: rgb(20, 137, 233);
+  color: #fff;
+}
+.btn-error {
+  background-color: rgb(255, 81, 0);
+  color: #fff;
+}
+
+.section {
+  background-color: #f4f4f4;
+  padding: 4rem;
+  min-height: 35vh;
+}
+.section h3 {
+  font-size: 1.5rem;
+}
+.section-a {
+  background-color: rgb(20, 137, 233);
+  color: #fff;
+}
+.section-a .container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.section-a .container .card {
+  background-color: #f4f4f4;
+  color: rgb(22, 19, 19);
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-a .container .card .card-img .fa {
+  text-align: center;
+  font-size: 48px;
+  width: 100%;
+  margin: 2rem 0;
+}
+.section-a .container .card .card-body {
+  margin: 3rem 0 0;
+}
+.section-a button {
+  display: flex;
+  margin: 4rem auto;
+}
+.section-b {
+  background-color: #f4f4f4;
+  color: rgb(22, 19, 19);
+}
+.section-b .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.section-b .flex h3 {
+  word-wrap: break-word;
+}
+.section-b .flex img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+.section-c {
+  background-color: rgb(255, 81, 0);
+  color: #fff;
+}
+.section-c p {
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+.section-c .gallery {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-c .gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.section-d {
+  background-color: #242121;
+  color: #fff;
+}
+.section-d form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 50%;
+  margin: auto;
+}
+.section-d form .form-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.section-d form .form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+.section-d form button {
+  display: flex;
+  margin-right: auto;
+}
+
+.carousel {
+  display: block;
+  width: 100%;
+  height: 500px;
+  background-color: #242121;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+  position: absolute;
+  top: 15rem;
+  z-index: 1;
+}
+.carousel-button .fa {
+  color: #f4f4f4;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10px;
+}
+.carousel-content {
+  padding: 1rem;
+  position: absolute;
+  word-wrap: break-word;
+  bottom: 12rem;
+  width: 60%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+  font-size: 24px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  text-shadow: #333 1px;
+  border: 1px solid #f4f4f4;
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: ease-in-out;
+  filter: opacity(70%);
+  z-index: -1;
+}
+
+@media (min-width: 367px) {
+  .carousel {
+    height: 60vh;
+    position: relative;
+  }
+  .carousel-button {
+    padding: 1.5rem;
+    top: 12rem;
+    z-index: 1;
+  }
+  .carousel .image {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-content {
+    position: absolute;
+    top: 15rem;
+    width: 60%;
+    height: fit-content;
+    font-size: 24px;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    color: #fff;
+  }
+  .section-a h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-a .container {
+    flex-direction: column;
+  }
+  .section-a .container .card-img .fa {
+    margin: 1rem;
+  }
+  .section-b h3 {
+    text-align: center;
+  }
+  .section-b .content {
+    flex-direction: column-reverse;
+  }
+  .section-b .content button {
+    display: flex;
+    margin: 1rem auto;
+  }
+  .section-c h3, .section-c p {
+    text-align: center;
+  }
+  .section-c p {
+    font-size: 24px;
+  }
+  .section-d form {
+    margin-top: 2rem;
+    width: 100%;
+    align-items: normal;
+    justify-content: space-between;
+  }
+  .section-d form label {
+    font-size: 18px;
+  }
+  .section-d form button {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=main.css.map */

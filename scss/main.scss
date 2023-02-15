@@ -1,0 +1,101 @@
+@import '_var';
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@import '_nav';
+@import '_function';
+
+body {
+  font-family: $font-stack;
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.grid {
+  display: grid;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $light;
+    color: set-text-color($light);
+
+    &:hover {
+      // @include transform(rotate(-20deg));
+      background-color: darken($light, 10%);
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    background-color: $light;
+    color: set-text-color($light);
+  }
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark;
+    color: set-text-color($dark);
+
+    &:hover {
+      background-color: lighten($dark, 10%);
+    }
+  }
+  &-success {
+    @extend %btn-shared;
+    background-color: $success;
+    color: set-text-color($success);
+  }
+  &-primary {
+    @extend %btn-shared;
+    background-color: $primary;
+    color: set-text-color($primary);
+  }
+  &-error {
+    @extend %btn-shared;
+    background-color: $error;
+    color: set-text-color($error);
+  }
+}
+
+@import '_home';
+
+@import '_footer';

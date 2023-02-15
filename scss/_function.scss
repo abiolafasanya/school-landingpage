@@ -1,0 +1,15 @@
+@import "_var";
+
+@function set-text-color($color) {
+ @if(lightness($color) > 50) {
+    @return $dark;
+ } @else {
+    @return $white;
+ }
+}
+
+@mixin transform($property) {
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: $property;
+}

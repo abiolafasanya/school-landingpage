@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script async src="/dist/js/typing.js"></script>
+    <title>School Landing Page</title>
+  </head>
+
+  <body>
+    <div class="fixed-nav">
+      <nav>
+        <h2>School Landing Page</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#activity">Activity</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Team</a></li>
+          <li class="" style="margin-left: 20px;">
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header id="home" class="carousel">
+      <div class="carousel-button">
+        <i
+          id="prevSlide"
+          class="fa fa-arrow-circle-left"
+          aria-hidden="true"
+        ></i>
+        <i
+          id="nextSlide"
+          class="fa fa-arrow-circle-right"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <div class="carousel-content"></div>
+    </header>
+
+    <main>
+      <section id="about" class="section section-a">
+        <h3>What we do</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-img">
+              <i class="fa fa-institution" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+            </div>
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet.
+              </p>
+              <button class="btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="activity" class="section section-b">
+        <h3>Recent Activity</h3>
+        <div class="flex content">
+          <div>
+            <h3>
+              Test session to allow children showcase thier talent in the
+              classroom
+            </h3>
+            <button class="btn-dark">More Event</button>
+          </div>
+          <img src="/dist/image/image8.jpg" alt="recent activity" />
+        </div>
+      </section>
+      <section id="gallery" class="section section-c">
+        <h3>Gallery</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa,
+          laborum aut nobis inventore fuga exercitationem quis repellat corporis
+          illum nam.
+        </p>
+        <div class="gallery">
+          <img src="/dist/image/image1.jpg" alt="gallery image" />
+          <img src="/dist/image/image2.jpg" alt="gallery image" />
+          <img src="/dist/image/image3.jpg" alt="gallery image" />
+          <img src="/dist/image/image4.jpg" alt="gallery image" />
+          <img src="/dist/image/image5.jpg" alt="gallery image" />
+          <img src="/dist/image/image6.jpg" alt="gallery image" />
+          <img src="/dist/image/image7.jpg" alt="gallery image" />
+          <img src="/dist/image/image8.jpg" alt="gallery image" />
+        </div>
+        <button class="btn-light">Learn More</button>
+      </section>
+      <section id="contact" class="section section-d">
+        <h3 style="text-align: center;">Contact</h3>
+        <div>
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name</label
+              ><input type="text" name="name" id="name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                cols="5"
+                rows="10"
+                name="message"
+                id="message"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button class="btn-error">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
