@@ -44,29 +44,16 @@ document.getElementById('prevSlide').onclick = function prevSlide() {
 
 
 
-let scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 800
- });
-
-
- window.addEventListener('scroll', () => {
-    // const sectionPos = skillSection.getBoundingClientRect().top
-    // const screenPos = window.innerHeight
- 
-    // if(sectionPos < screenPos){
-    //    console.log('show progress bar')
-    //    showProgressAnimation()
-    // }
-    // else {
-    //    console.log('hide progress bar')
-    //    hideProgressAnimation()
-    // }
-  })
- 
-
-
-
-
-
-
-
+const harmburger = document.querySelector('#harmburger');
+const menus = document.querySelector('#navigation');
+harmburger.onclick = function (e) {
+  menus.classList.toggle('hidden');
+};
+window.addEventListener('resize', function (e) {
+  let wsize = this.window.screen;
+  if (400 < wsize.width) {
+    console.log(wsize.width);
+    menus.classList.remove('hidden');
+  }
+  console.log(e.target.classList);
+});

@@ -8,9 +8,12 @@
 @import '_nav';
 @import '_function';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-stack;
-  scroll-behavior: smooth;
 }
 
 .text-center {
@@ -27,6 +30,9 @@ body {
 
 .text-justify {
   text-align: justify;
+}
+.hidden {
+  display: none;;
 }
 
 .flex {

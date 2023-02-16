@@ -311,4 +311,19 @@
         }
     }
 }
+.section-d{
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 50%;
+        margin: auto;
+        
+        button:hover {
+            background-color: darken($color: $error, $amount: 10);
+        }
+    }
+}
+
 }
